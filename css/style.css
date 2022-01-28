@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');    
+
 
 body{
     /* background-color: rgba(51,51,51,.6); */
 }
-
 p{
     color: #999;
     font-family: lora,serif;
@@ -16,8 +16,9 @@ h1 h2 h3 h4 h5{
 .main_wrap{
     background-image: linear-gradient(rgba(51,51,51,.6), rgba(51,51,51,.6)),url("../images/background.jpg");
     background-color: black;
-    /* min-height: 650px; */
     height: 100vh!important;
+    /* position: relative; */
+    margin-top: -100px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -26,7 +27,15 @@ h1 h2 h3 h4 h5{
     /* opacity: 0.88; */
 }
 header{
-    line-height: 100px;
+    height: max-content;
+    position: fixed;
+}
+.header_background{
+    background-color: white;
+    color: black;
+}
+.logo{
+    margin-top: 32px;
 }
 .nav_bar{
     /* line-height: 100px; */
@@ -59,10 +68,10 @@ header{
 .mid_content{
     text-align: center;
     line-height: 80px;
-    padding-top: 80px;
+    padding-top: 180px;
     padding-bottom: 80px;
     color: #fff;
-    /* margin-top: 100px !important; */
+    margin-top: 100px !important;
     /* margin-bottom: 300px !important; */
 }
 .mid_content h1{
@@ -185,19 +194,34 @@ background-color: #f5af00;
     background-color: #fff;
     padding: 50px 0px;
 }
+.progress{
+    height: 6px !important;
+}
 .progress_content{
     padding-top: 50px;
+    padding-left: 50px;
 }
 .progress_content h1{
-    font-family: poppins,sans-serif;
     color: #222;
     font-size: 36px;
     line-height: 50px;
     margin-bottom: 27px;
+    font-weight: 400;
 }
 .progress_content p{
     font-size: 16px;
     line-height: 26px;
+}
+.progress{
+    background-color: black;
+}
+label{
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 .bar{
     display: block;
@@ -205,19 +229,10 @@ background-color: #f5af00;
     width: 100%;
     margin-bottom: 17px;
     line-height: 1;
+    padding-bottom: 20px;
 }
-.progress-bar{
-    background-color: #f5af00;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-.bar progress{
-    width: 500px;
-    color: #f5af00;
-}
-progress::-webkit-progress-bar {
-    /* background-color: #f5af00; */
+#value{
+    float: right;
 }
 .ad-wrap{
     width: 100%;
@@ -332,7 +347,7 @@ progress::-webkit-progress-bar {
     margin-bottom: -30px;
 }
 .footer a{
-    color: #999;s
+    color: #999;
 }
 .footer a:hover{
     color: #f5af00;
