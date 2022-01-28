@@ -290,6 +290,52 @@ progress::-webkit-progress-bar {
     font-weight: 700;
     padding-left: 120px;
 }
+.contact{
+    padding: 75px 0px;
+    text-align: center;
+}
+.contact_item i{
+    font-size: 55px;
+    color: #f5af00;
+    line-height: 1;
+    margin-bottom: 30px;
+    display: block;
+}
+.contact_item h3{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 16px;
+}
+.contact_item p{
+    margin-left: 18%; 
+    margin-right: 18%;
+}
+.footer{
+    height: 40px;
+    border-top: 1px solid #e5e5e5;
+}
+.footer p{
+    padding-top: 30px;
+}
+.footer ul{
+    margin-top: -40px;
+    color: #999;
+    float: right;
 
+}
+.footer ul li{
+    color: #999;
+    list-style: none;
+    display: inline;
+    padding-left: 20px;
+    margin-bottom: -30px;
+}
+.footer a{
+    color: #999;s
+}
+.footer a:hover{
+    color: #f5af00;
+}
 
 
