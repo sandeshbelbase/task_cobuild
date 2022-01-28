@@ -1,11 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 body{
-    background-color: rgba(51,51,51,.6);
+    /* background-color: rgba(51,51,51,.6); */
 }
 
 p{
     color: #999;
     font-family: lora,serif;
     font-weight: 400;
+}
+h1 h2 h3 h4 h5{
+    font-family: poppins,sans-serif;
 }
 .main_wrap{
     background-image: linear-gradient(rgba(51,51,51,.6), rgba(51,51,51,.6)),url("../images/background.jpg");
@@ -69,16 +75,22 @@ header{
     font-weight: 400;
 }
 .mid_content button{
+    font-family: poppins,sans-serif;;
     font-weight: 500;
     background-color: #f5af00;
     width: 170px;
     height: 50px;
-    line-height: 50px;
-    border-radius: 30px;
-    font-size: 12px;
+    line-height: 50px !important;
+    border-radius: 50px !important;
+    font-size: 12px !important;
     color: #fff;
     border: 2px solid #f5af00;
 }
+.mid_content button:hover{
+    color: #fff;
+    background-color: #333;
+    border: 2px solid #333;
+}   
 .services{
     padding-bottom: 100px;
 }
@@ -171,9 +183,10 @@ background-color: #f5af00;
 
 .progress_wrap{
     background-color: #fff;
+    padding: 50px 0px;
 }
 .progress_content{
-    padding-top: 80px;
+    padding-top: 50px;
 }
 .progress_content h1{
     font-family: poppins,sans-serif;
@@ -186,3 +199,97 @@ background-color: #f5af00;
     font-size: 16px;
     line-height: 26px;
 }
+.bar{
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 17px;
+    line-height: 1;
+}
+.progress-bar{
+    background-color: #f5af00;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.bar progress{
+    width: 500px;
+    color: #f5af00;
+}
+progress::-webkit-progress-bar {
+    /* background-color: #f5af00; */
+}
+.ad-wrap{
+    width: 100%;
+    background-color: #f5af00;
+    display: inline-flex;
+    padding: 75px 0px;
+}
+.ad-wrap button{
+    float: right;
+    font-family: poppins,sans-serif;;
+    font-weight: 500;
+    background-color: #f5af00;
+    width: 170px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50px !important;
+    font-size: 12px !important;
+    color: #fff;
+    border: 1.5px solid #fff;
+}
+.ad-wrap button:hover{
+    background-color: #fff;
+    color: #f5af00;
+}
+.ad-wrap h2{
+    float: left;
+    color: #fff;
+    font-size: 30px;
+    line-height: 50px;
+}
+.client_wrap{
+    background-color: #f9f9f9;
+    padding-bottom: 75px;
+}
+.head_content{
+    padding: 75px 0px;
+    text-align: center;
+    width: 100%;
+}
+.head_content h2{
+    line-height: 50px;
+    color: #222;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 27px;
+}
+.head_content p{
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 16px;
+    line-height: 26px;
+}
+.client_item img{
+    position: absolute;
+    border-radius: 50px;
+    height: 80px;
+}
+.client_item p{
+    position: relative;
+    font-size: 20px;
+    line-height: 35px;
+    font-style: italic;
+    margin-bottom: 29px;
+    font-family: lora,serif;
+    padding-left: 100px;
+    margin-bottom: 30px;
+}
+.client_item h3{
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 120px;
+}
+
+
+
