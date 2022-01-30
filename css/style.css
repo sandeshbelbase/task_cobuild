@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');    
+@import url('https://fonts.googleapis.com/css2?family="lora"&display=swap');
+@import url('https://fonts.googleapis.com/css2?family="poppins":wght@300&display=swap');    
 
 
 body{
@@ -7,11 +7,11 @@ body{
 }
 p{
     color: #999;
-    font-family: lora,serif;
+    font-family: "lora",serif;
     font-weight: 400;
 }
 h1 h2 h3 h4 h5{
-    font-family: poppins,sans-serif;
+    font-family: "poppins",sans-serif;
 }
 .main_wrap{
     background-image: linear-gradient(rgba(51,51,51,.6), rgba(51,51,51,.6)),url("../images/background.jpg");
@@ -29,6 +29,7 @@ h1 h2 h3 h4 h5{
 header{
     height: max-content;
     position: fixed;
+    z-index: 100;
 }
 .header_background{
     background-color: white;
@@ -43,21 +44,33 @@ header{
     float: right;
 }
 .nav_bar ul{
-    /* line-height: 100px; */
+    display: flex;
+    justify-content: end;
     list-style: none;
-    font-family: poppins,sans-serif;
-    
+    font-family: "poppins",sans-serif;
+}
+.on_scrolling{
+    background-color: #fff;
+    padding-bottom: 20px;
+}
+.on_scrolling .nav_bar ul li a{
+    color: black;
+    font-family: "poppins",sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21px;
+    text-decoration: none;
+    padding-left: 26px;
 }
 .nav_bar ul li{
-    display: block;
-    float: left;
+
 }
 .nav_bar ul li a{
-    font-family: poppins,sans-serif;
+    font-family: "poppins",sans-serif;
    display: block;
     color: #fff;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 21px;
     text-decoration: none;
     padding-left: 26px;
@@ -76,7 +89,7 @@ header{
 }
 .mid_content h1{
     font-size: 70px;
-    font-family: poppins,sans-serif;
+    font-family: "poppins",sans-serif;
 }
 .mid_content p{
     color: #fff;
@@ -84,8 +97,8 @@ header{
     font-weight: 400;
 }
 .mid_content button{
-    font-family: poppins,sans-serif;;
-    font-weight: 500;
+    font-family: "poppins",sans-serif;;
+    font-weight: 400;
     background-color: #f5af00;
     width: 170px;
     height: 50px;
@@ -110,7 +123,7 @@ header{
 }
 .our_services h1{
     text-align: center;
-    font-family: poppins,sans-serif;
+    font-family: "poppins",sans-serif;
     color: #222;
     font-size: 36px;
     line-height: 50px;
@@ -128,7 +141,7 @@ header{
     text-align: center;
 }
 .service_items h3{
-    font-family: poppins,sans-serif;
+    font-family: "poppins",sans-serif;
     color: #333;
     font-size: 18px;
     line-height: 1;
@@ -157,7 +170,7 @@ header{
 }
 .work_content h1{
     text-align: center;
-    font-family: poppins,sans-serif;
+    font-family: "poppins",sans-serif;
     color: #222;
     font-size: 36px;
     margin-bottom: 25px;
@@ -183,12 +196,81 @@ header{
     color: #f5af00;
 }
 .work_item img{
-    margin: 10px;
+    /* padding-right: 10px; */
+    /* background-color: #f5af00; */
+    /* margin: 10px; */
+    z-index: 1;
+}
+.work_item {
+    background-color: #f5af00;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+
+    /* z-index: -1; */
+}
+.work_item:hover .image{
+    transform: scale(1.1);
+    opacity: 0.1;
+    transition: 0.7s;
+}
+.work_item:hover i{
+    color: #fff;
+    font-size: 32px;
+}
+.work_item:hover .text{
+    color: #fff;
+    text-decoration: none;
 }
 
-.work_item a:hover{
-background-color: #f5af00;
+.middle{
+    color: #fff;
+    transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
 }
+.middle a{
+    /* color: #fff; */
+    text-decoration: none;
+}
+.text{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+}
+.middle .text:hover{
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+}
+.middle a:hover{
+    /* text-decoration: none; */
+    color: black ;
+}
+.work_item:hover .middle {
+    text-decoration: none;
+    color: #fff;
+	opacity: 1;
+  }
+  .work_item:hover a:hover{
+      color: black;
+  }
+  .text {
+    text-decoration: none;
+    z-index: -1;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+	/* font-size: 16px; */
+	/* padding: 16px 32px; */
+  }
 
 .progress_wrap{
     background-color: #fff;
@@ -217,11 +299,12 @@ background-color: #f5af00;
 }
 label{
     color: #333;
-    font-family: 'Poppins', sans-serif;
+    font-family: '"poppins"', sans-serif;
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
+    margin-bottom: 20px;
 }
 .bar{
     display: block;
@@ -239,11 +322,12 @@ label{
     background-color: #f5af00;
     display: inline-flex;
     padding: 75px 0px;
+    font-weight: 400;
 }
 .ad-wrap button{
     float: right;
-    font-family: poppins,sans-serif;;
-    font-weight: 500;
+    font-family: "poppins",sans-serif;;
+    font-weight: 400;
     background-color: #f5af00;
     width: 170px;
     height: 50px;
@@ -296,7 +380,7 @@ label{
     line-height: 35px;
     font-style: italic;
     margin-bottom: 29px;
-    font-family: lora,serif;
+    font-family: "lora",serif;
     padding-left: 100px;
     margin-bottom: 30px;
 }
