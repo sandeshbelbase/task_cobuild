@@ -8,5 +8,4 @@ window.addEventListener("scroll", function () {
     }else{
         new_logo.src =  ("../images/logo.png")
     }
-   
 });
