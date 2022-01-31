@@ -89,6 +89,7 @@ header{
 }
 .mid_content h1{
     font-size: 70px;
+    line-height: 80px;
     font-family: "poppins",sans-serif;
 }
 .mid_content p{
@@ -149,14 +150,14 @@ header{
     text-transform: capitalize;
 }
 .service_items p{
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 26px;
     margin-bottom: 0;
     color: #999;
 }
 .service_items i{
     color: #f5af00;
-    font-size: 50px;
+    font-size: 40px;
     line-height: 1;
     margin-bottom: 34px;
 }
