@@ -58,11 +58,11 @@ header {
   font-family: "poppins", sans-serif;
 }
 .on_scrolling {
+  box-shadow: 0 1px 3px rgb(0 0 0 / 9%);
   height: 100px;
   background-color: #fff;
   padding-bottom: 20px;
 }
-
 .on_scrolling .nav_bar ul li a {
   color: black;
   font-family: "poppins", sans-serif;
@@ -154,7 +154,6 @@ header {
 }
 .service_items {
   text-align: center;
-  margin-bottom: 10px;
 }
 .service_items h3 {
   font-family: "poppins", sans-serif;
@@ -334,9 +333,8 @@ label {
   float: right;
 }
 .ad-wrap {
-  width: 100%;
   background-color: #f5af00;
-  display: inline-flex;
+  display: flex;
   padding: 75px 0px;
   font-weight: 400;
 }
@@ -467,4 +465,24 @@ label {
   background-color: black;
   opacity: 0.8;
   padding-right: 40px !important;
+}
+.client_slider .previous_arrow{
+  height: 30px;
+  position: absolute;
+  bottom: 50%;
+  left: -50px;
+  padding: 10px;
+  background-color: #eee;
+  border-radius: 50px;
+  line-height: 10px;
+}
+.client_slider .next_arrow{
+  height: 30px;
+  position: absolute;
+  bottom: 50%;
+  right: -50px;
+  padding: 10px;
+  background-color: #eee;
+  border-radius: 50px;
+  line-height: 10px;
 }

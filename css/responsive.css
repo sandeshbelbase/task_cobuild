@@ -18,9 +18,6 @@ header button i{
     .work-content p{
         margin: 0px;
     }
-    .ad-wrap{
-        padding: 50px 0px;
-    }
     .ad-wrap button{
         width: 110px;
         height: 35px;
@@ -97,13 +94,100 @@ header button i{
     .work_item img{
         width: 100%;
     }
+    .ad_wrap{
+        position: absolute;
+        margin-left: 0px !important;
+        width: 100%;
+    }
     .ad-wrap h2 {
-        font-size: 16px;
-        line-height: 12px;
+        font-size: 18px;
+        padding-right: 51px;
+        line-height: 28px;
+    }
+    .ad_wrap button{
+        width: 100px;
+    }
+    .progress_content{
+        padding-left: 0px;
+    }
+    .progress_content h1{
+        text-align: center;
+    }
+
+    .work-content p{
+        margin: 0px;
     }
 
 }
-/* for 576 */
-@media (max-width: 576){
+/* for 644 */
+@media (max-width: 645px) {
+    .ad_wrap h2{
+        font-size: 14px;
+        line-height:0px;
+    }
+    .client_slider .previous_arrow{
+        left: 0px;
+      }
+      .client_slider .next_arrow{
+        right: 0px;
+      }
+      .client_item p {
+        font-size: 14px;
+    }
+    .client_item img{
+        height: 55px;
+    }
+    
 
+
+}
+
+/* for 576 */
+@media (max-width: 576px){
+    .ad-wrap{
+        width: 100%;
+    }
+    .ad-wrap h2 {
+        font-size: 14px;
+        line-height: 28px;
+        padding-right: 0px;
+    }
+    .work_content{
+        padding-top: 30px;
+    }
+    .services {
+        padding-bottom: 70px;
+    }
+    .footer{
+        font-size: 14px;
+    }
+}
+@media (max-width: 506px){
+    .ad-wrap button{
+        width: 92px;
+    }
+}
+@media (max-width: 492px){
+    .ad-wrap {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .ad-wrap button{
+        width: 92px;
+        float: left;
+
+    }
+}
+@media (max-width: 398px){
+    .ad-wrap h2{
+        font-size: 12px;
+    }
+    .footer {
+        font-size: 10px;
+    }
+    .footer ul{
+        margin-top: -30px;
+    }
 }

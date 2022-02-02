@@ -9,3 +9,19 @@ window.addEventListener("scroll", function () {
         new_logo.src =  ("../images/logo.png")
     }
 });
+$('.client_slider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 2,
+    prevArrow: '<i class = "fas fa-angle-left  previous_arrow"></i>',
+    nextArrow: '<i class = "fas fa-angle-right  next_arrow"></i>',
+    mobileFirst: true,
+    responsive: [{
+        breakpoint: 1024,
+        settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            centerMode: false
+        }
+    }]
+  });
