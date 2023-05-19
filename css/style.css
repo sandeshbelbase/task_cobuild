@@ -4,6 +4,7 @@
 body {
   /* background-color: rgba(51,51,51,.6); */
 }
+/* nanda color code #0333c1 */
 p {
   color: #999;
   font-family: "lora", serif;
@@ -44,7 +45,11 @@ header {
   color: black;
 }
 .logo {
-  margin-top: 32px;
+  margin-top: 14px;
+}
+.logo img{
+  height: 80px;
+  width: 80px;
 }
 .nav_bar {
   /* line-height: 100px; */
@@ -84,7 +89,7 @@ header {
   padding-left: 26px;
 }
 .nav_bar a:hover {
-  color: #f5af00;
+  color: #0333c1;
 }
 .mid_content {
   display: flex;
@@ -114,19 +119,19 @@ header {
 .mid_content button {
   font-family: "poppins", sans-serif;
   font-weight: 400;
-  background-color: #f5af00;
+  background-color: #0333c1;
   width: 170px;
   height: 50px;
   line-height: 50px !important;
   border-radius: 50px !important;
   font-size: 12px !important;
   color: #fff;
-  border: 2px solid #f5af00;
+  border: 2px solid #0333c1;
 }
 .mid_content button:hover {
   color: #fff;
   background-color: #333;
-  border: 2px solid #333;
+  border: 2px solid #eee;
 }
 .services {
   padding-bottom: 100px;
@@ -170,7 +175,7 @@ header {
   color: #999;
 }
 .service_items i {
-  color: #f5af00;
+  color: #0333c1;
   font-size: 40px;
   line-height: 1;
   margin-bottom: 34px;
@@ -208,16 +213,16 @@ header {
   list-style: none;
 }
 .work_content a:hover {
-  color: #f5af00;
+  color: #0333c1;
 }
 .work_item img {
   /* padding-right: 10px; */
-  /* background-color: #f5af00; */
+  /* background-color: #0333c1; */
   /* margin: 10px; */
   z-index: 1;
 }
 .work_item {
-  background-color: #f5af00;
+  background-color: #0333c1;
   position: relative;
   overflow: hidden;
   margin-bottom: 30px;
@@ -333,7 +338,7 @@ label {
   float: right;
 }
 .ad-wrap {
-  background-color: #f5af00;
+  background-color: #0333c1;
   display: flex;
   padding: 75px 0px;
   font-weight: 400;
@@ -342,7 +347,7 @@ label {
   float: right;
   font-family: "poppins", sans-serif;
   font-weight: 400;
-  background-color: #f5af00;
+  background-color: #0333c1;
   width: 170px;
   height: 50px;
   line-height: 50px;
@@ -353,7 +358,7 @@ label {
 }
 .ad-wrap button:hover {
   background-color: #fff;
-  color: #f5af00;
+  color: #0333c1;
 }
 .ad-wrap h2 {
   float: left;
@@ -411,7 +416,7 @@ label {
 }
 .contact_item i {
   font-size: 55px;
-  color: #f5af00;
+  color: #0333c1;
   line-height: 1;
   margin-bottom: 30px;
   display: block;
@@ -427,8 +432,6 @@ label {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  margin-left: 18%;
-  margin-right: 18%;
 }
 .footer {
   height: 40px;
@@ -454,7 +457,7 @@ label {
   color: #999;
 }
 .footer a:hover {
-  color: #f5af00;
+  color: #0333c1;
 }
 .navbar-toggler{
   color: #fff;
@@ -485,4 +488,9 @@ label {
   background-color: #eee;
   border-radius: 50px;
   line-height: 10px;
+}
+
+/* css for progress bar */
+.bg-warning{
+  background-color: #0333c1 !important;
 }

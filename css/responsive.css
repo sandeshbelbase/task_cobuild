@@ -2,7 +2,7 @@ header button{
     display: none;
 }
 header button i{
-    color: #f5af00;
+    color: #0333c1;
 }
 @media (max-width: 932px){
     .main_wrap{
@@ -42,7 +42,7 @@ header button i{
     }
     .contact{
         padding: 40px 0px;
-    }
+    }}
 
 /* for 768 breakpoint */
 @media (max-width: 768px){
